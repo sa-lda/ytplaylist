@@ -60,7 +60,7 @@ const ButtonsGroup = ({ exportHref, openPopup, setPlayList }) => {
     <div class="flex items-end flex-wrap mb-4 max-w-xs sm:max-w-xl">
       <${Button} 
         customClass="mr-2"
-        download="anonymous-youtube-playlist.json"
+        download="${new Date().getDate()+'-'+(new Date().getMonth()+1)}-youtube-playlist.json"
         href=${exportHref}
       >
         Export playlist
