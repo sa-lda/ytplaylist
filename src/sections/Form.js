@@ -22,7 +22,7 @@ const Form = ({
           id="videoUrlField"
           type="text"
           class="${css.input} mb-4"
-          value=${videoUrl}
+          value=${'https://www.youtube.com/watch?v='+videoUrl}
           onInput=${e => handleChangeUrl(e)}
           required
         />
